@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* By default, the box-sizing property is set to content-box, which means that the width and height of an element only includes the content, but not the padding, border, or margin.
+ */
+ /* However, when box-sizing is set to border-box, the width and height of an element includes the content, padding, and border, but not the margin. This can be useful when you want to specify the exact size of an element, including its padding and border, without having to worry about the size of its content. */
+
+
+
+/* header {
+    border: 2px dashed red;
+    width: 400px; 
+    padding: 1.5rem;
+} */
+/* therefore due to box-sizing (multiply border and padding by 2 since it is applied to both sides of the element):
+border=2px * 2 = 4px
+padding=(1.5*2) rem = 3rem = 48px (since 1rem = 16px) 
+content=400-4-48 = 348px*/
+
+.container {
+    border: dashed red; /* shorthand for border-width, border-style, border-color */
+    /* border-top: 5px solid green;
+    border-top-width: 10px;
+    border-top-color: black; */
+    border-right: 10px double blue;
+    font-size: 1.5rem;
+    margin: 1.5em;
+    /* margin: 1.5em 2em 2em; */
+    /* adds margin 1.5 to top, 2 to right and bottom */
+    /* margin-top: 1em; 
+    margin-right:2em;
+    margin-bottom:2em;
+    margin-left: 2em; */
+    padding:1.5em;
+    outline: 5px solid purple;
+    outline-offset: -20px;
+}
+/* In this case for the margin header: 1.5rem = 24px =  1em (first equality since root el has font-size 16px=1rem, second equality since the font-size of .container is 24px=1em by definition)  */
+
+/* outline is outside of the box-model (i.e. is not calculated in the box model in the Inspect section. You can bring the outline inside the box model by changing the sign of the offset.*/
+
+.circle {
+    margin: 3rem auto; /* auto centers the element left and right, since div does not take the whole line*/
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50px; /* this is 50% of the width and height */
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+}

@@ -1,0 +1,21 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: papayawhip;
+    /* color: darkblue; */
+    color: rgb(0, 255, 0)
+}
+
+p {
+    /* color: rgba(0, 0, 0, 0.5)  */
+    /* hex codes */
+    
+    color: #000000; /* black */
+    color: #FFFFFF; /* white */
+    color: #808080; /* gray */
+    color: hsl(0, 0%, 50%); /* gray */ 
+}
+/* a channel drives the transparency */
+/* hsl stands for hue, saturation and lightness */
+

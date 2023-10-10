@@ -1,0 +1,31 @@
+/* Pixels are an absolute value units */
+/* For text however you want to use a relative font size. Use rem */
+/* The "rem" (root em) unit in CSS is a relative unit of measurement that is based on the font size of the root element of the document, typically the <html> element. Unlike the "em" unit, which is relative to the font size of its parent element, "rem" is always relative to the font size of the root element.  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%; /* 100% of the parent element (body in this case, i.e. the page) */
+}
+body {
+    min-height: 100vh; /* 100% of the viewport height */
+    /* can usually liked by programmers */
+}
+h1 {
+    border: 2px dashed red;
+    width: 50%; /* 50% of the parent element (header in this case) */
+}
+
+main {
+    /* width: 50vw;  */
+    /* 50% of the viewport width */ 
+    background-color: skyblue;
+    font-size: 2rem; /* 2 times the font size of the root element (html) */
+}
+p {
+    font-size: 2rem; /* always use rem (i.e. look at the root element), otherwise if you use em, it will look at the parent element, and make it twice as big... */
+    width: 40ch; /* 40 characters wide */
+}

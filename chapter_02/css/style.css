@@ -1,0 +1,38 @@
+/* CSS is cascading: more specific elements (e.g. classes) overwrite generic elements. */
+
+
+/* * {
+    font-family: monospace;
+} */
+/* html {
+    font-size: 10px;
+} */
+
+body {
+    font-size: 22px;
+    border: 1px solid black;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+/* Look for span inside of a p */
+/* alternatively we could look for any class .highlight */
+
+/* CLASSES */
+.myclass {
+    color: red;
+}
+/* Using body and p selectors */
+/* writing a custom class */
+/* Note: do not id selectors */
+
