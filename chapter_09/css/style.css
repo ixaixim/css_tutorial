@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   margin: 0.5rem;
+   font-family: "Roboto", sans-serif;
+   text-align: center;
+}
+
+nav {
+  border: 2px solid #333;
+  border-radius: 2rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  font-size: 3rem;
+  line-height: 7rem;
+}
+
+h2 {
+   padding: 1rem;
+   background: gold;
+   border-radius: 2rem 2rem 0 0;
+   /* border of h2 golden element matches the border of the nav element at upper left and upper right corners */
+}
+
+/* unordered list  */
+ul {
+   list-style-type: none;
+}
+
+/* list items */
+li {
+   border-top: 1px solid #333;
+}
+
+/* style the links of the list */
+li a {
+   display: block;
+}
+/* this way the anchor element (a) within list element (li) takes up the full block (i.e. takes full width of the container) */
+
+li a, 
+li a:visited {
+   text-decoration: none;
+   color: #333;
+}
+
+li a:hover,
+li a:focus {
+   background: #333;
+   color: whitesmoke;
+}
+/*  The :hover pseudo-class is triggered when the user hovers over an element with their mouse cursor. */
+/* The :focus pseudo-class is triggered when an element receives focus, such as when a user clicks on it or navigates to it using the keyboard.*/ 
+
+/* styles the last item of the list to match the curved box  */
+li:last-child a{
+   border-radius: 0 0 2rem 2rem;
+}

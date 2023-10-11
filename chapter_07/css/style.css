@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+   padding: 10%;
+   font-size: 2rem;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* styling links */
+a {
+   text-decoration: none;
+   /* cursor: not-allowed; */
+   color: hsl(207, 44%, 49%);
+}
+/* cursor: icon when you hover over the link */
+
+
+
+/* pseudo-class */
+/* A pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover is a pseudo-class that applies a style when the user hovers over an element with the mouse.  */
+/* pseudo class is more specific and overrides color property under the 'a' tag */
+a:visited {
+   color: purple;
+}
+
+a:hover, a:focus {
+   /* color: hsl(189, 44%, 49%) */
+   /* trick: make color slightly less hue than 'a' tag color. */
+   color: hsl(207, 44%, 39%, 0.8);
+   /* or add transparency with respect to the color of the 'a' class. */
+   /* background: gold; */
+}
+
+a:active {
+   color: red;
+}
