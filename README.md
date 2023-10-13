@@ -1,40 +1,44 @@
 # CSS Full Course for Beginners
 
-I'm using this repository to access code and resources for a comprehensive CSS course that I'm studying as a beginner. The course covers a wide range of topics, starting from basic selectors and extending to advanced subjects like animations and flexbox. I want to clarify that this course specifically focuses on CSS3.
+I'm using this repository to access code and resources for a comprehensive CSS course that I'm studying as a beginner. The course covers a wide range of topics, starting from basic selectors and extending to advanced subjects like animations and flexbox. 
 
 ![CSS_logo](img/css.png)
 
 ## Table of Contents
 
-0. **[Intro](#intro)**
-1. **[Start Here](#start-here)**
-2. **[Selectors](#selectors)**
-3. **[Colors](#colors)**
-4. **[Units & Sizes](#units--sizes)**
-5. **[Box Model](#box-model)**
-6. **[Typography](#typography)**
-7. **[Styling Links](#styling-links)**
-8. **[List Styles](#list-styles)**
-9. **[Mini Project](#mini-project)**
-10. **[Display](#display)**
-11. **[Floats](#floats)**
-12. **[Columns](#columns)**
-13. **[Position](#position)**
-14. **[Flexbox](#flexbox)**
-15. **[Grid Layout](#grid-layout)**
-16. **[Images](#images)**
-17. **[Media Queries](#media-queries)**
-18. **[Card Project](#card-project)**
-19. **[Pseudo](#pseudo)**
-20. **[Variables](#variables)**
-21. **[Functions](#functions)**
-22. **[Animations](#animations)**
-23. **[Organization](#organization)**
-24. **[Final Project](#final-project)**
+0. Intro
+1. Start Here
+2. Selectors
+3. Colors
+4. Units & Sizes
+5. Box Model
+6. Typography
+7. Styling Links
+8. List Styles
+9. Mini Project
+10. Display
+11. Floats
+12. Columns
+13. Position
+14. Flexbox
+15. Grid Layout
+16. Images
+17. Media Queries
+18. Card Project
+19. Pseudo
+20. Variables
+21. Functions
+22. Animations
+23. Organization
+24. Final Project
 
 
 ## Useful tools
 The page [coolors](https://coolors.co/contrast-checker/112a46-acc8e5) contains recommendations to match the of text and background.
+
+The page [Sym](https://symbl.cc/en/) contains a collection of symbols that can be copied and added to html.
+
+The page [W3C CSS](https://jigsaw.w3.org/css-validator/validator) can be used to validate CSS files.
 
 ---
 
