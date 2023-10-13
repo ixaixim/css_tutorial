@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+   font-size: 1.5rem;
+   font-family: "Roboto", sans-serif;
+}
+
+.block {
+   width:30vw; 
+   height: 30vw;
+   background-color: #000;
+   color: #fff;
+   padding: 1rem;
+}
+
+/* Makes the block left a float */
+.left {
+   float: left;
+   margin-right: 1rem;
+   /* adds space for text on the right */
+}
+
+.right {
+   float: right;
+   margin-left: 1rem;
+}
+
+.clear {
+   clear: both;
+   /* can also clear only right or only left */
+}
+
+/* Display flow root: the element will contain its floats and prevent them from overlapping with other elements outside of the block formatting context. */
+section {
+   background-color: bisque;
+   border: 1px solid  #333;
+   padding: 1rem;
+   /* up until here, the section overflows, how to fix it? Use display-root*/
+   display: flow-root;
+}

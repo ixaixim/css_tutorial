@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+   font-size: 1.5rem;
+   font-family: "Roboto", sans-serif;
+}
+
+/* Note: column-count does not keep one paragraph per column */
+/*  One can also set a fixed width per column (result: the number of cols will vary if not able to fit all 4).  */
+.columns {
+   /* column-count: 4;
+   column-width: 250px; */
+   /* equivalent to: */
+   columns: 4 250px;
+   column-rule: 3px solid #000;
+}
+
+/* fix the alignment at top */
+.columns p {
+   margin-top: 0;
+}
+
+.columns h2 {
+   margin-top: 0;
+   background-color: #333;
+   color: #fff;
+   padding: 1rem;
+   break-inside: avoid;
+   /* prevent heading from being split between columns */;
+}
+
+/* get quotation marks, hyphen and other symbols from https://symbl.cc/en */
+.columns .quote {
+   margin-top: 2rem;
+   /* adding again the margin. Note this overwrites: .columns .quote is more specific than .columns .p  */
+   font-size: 3rem;
+   text-align: center;
+   color: #333;
+   column-span: all;
+}
+
+/* The hyphen of the quote will not be split with white space nowrap */
+.nowrap {
+   white-space: nowrap;
+   /* prevent text from wrapping */
+
+}

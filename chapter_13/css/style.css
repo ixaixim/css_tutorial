@@ -1,0 +1,152 @@
+/* POSITION */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-size: 1.5rem;
+   font-family: "Roboto", sans-serif;
+   min-height: 200vh;
+}
+
+
+/* FIRST SECTION IS FOR THE FIRST PART OF THE HTML (NOW COMMENTED) */
+/* The position property in CSS specifies how an element is positioned on a web page. When applied to a div element, it determines how the element is positioned within its parent container.
+
+There are four possible values for the position property: static, relative, absolute, and fixed.
+
+ */
+.outer-container {
+   border: 3px dashed #000;
+   width: 75vw;
+   height: 85vh;
+   margin: 40px auto;
+   /* position: relative; */
+}
+
+.inner-container {
+   border: 2px dashed #000;
+   width: 40vw;
+   height: 50vh;
+   margin: 200px auto;
+}
+
+.box {
+   width: 150px;
+   height: 150px;
+   color: #fff;
+   padding: 1rem;
+}
+
+/* 
+'absolute' positions the element relative to its nearest positioned ancestor, or to the initial containing block if there is no positioned ancestor.
+I.e. position absolute container at specific position relative to its parent container (inner-container)
+ */
+ /* basically puts the block relative to the margin of the parent */
+.absolute {
+   background-color: #00f;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   /* z- index makes the block stay in front lower z-index blocks (e.g. fixed) */
+}
+
+/* 'relative' positions the element relative to its normal position in the document flow, while still allowing other elements to flow around it. */
+/* basically puts the block relative to the content of the parent  */
+.relative {
+   background-color: #f00;
+   position: relative;
+   top: 300px;
+   left: 300px;
+}
+
+
+/* 'fixed' positions the element relative to the viewport, which means it will stay in the same place even if the page is scrolled. */
+/* remains in the same position, EVEN when we scroll the page */
+
+.fixed {
+   background-color: #0f0;
+   position: fixed;
+   top: 100px;
+}   
+
+/* 'sticky' is a mix of relative and fixed. This means that the element will behave like a position: relative element until it reaches a certain point on the page, at which point it will "stick" to the top of the viewport and remain there as the user scrolls.
+
+ */
+ /* 
+ The top and right properties are also used to specify the position of the element when it is in its "sticky" state. In this case, the element will be positioned at the top right corner of the viewport.
+
+ */
+.sticky {
+   background-color: #000;
+   position: sticky;
+   top: 0;
+   right: 0;
+}
+   
+/* THIS SECTION IS FOR THE SECOND PART OF THE HTML */
+
+/* make html interal link scroll to section when clicked */
+html {
+   scroll-behavior: smooth;
+
+}
+
+section {
+   height: 100vh;
+}
+
+
+/* add header colors */
+.blue {
+   background-color: blue;
+}
+
+.red {
+   background-color: red;
+}
+
+.green {
+   background-color: green;
+}
+
+header, footer {
+   color: white;
+   text-align: center;
+   height: 100px;
+   font-size: 5rem;
+}
+
+header {
+   position: sticky;
+   top: 0;
+   font-size: 5rem;
+}
+
+footer {
+   background-color: #000;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+a:visite {
+   color: #fff;
+}
+
+.social {
+   background-color: royalblue;
+   color: #fff;
+   font-size: inherit;
+   padding: 1rem;
+   position: fixed;
+   top: 30%;
+   left:0;
+   z-index: 1;
+}
