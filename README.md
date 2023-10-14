@@ -40,6 +40,8 @@ The page [Sym](https://symbl.cc/en/) contains a collection of symbols that can b
 
 The page [W3C CSS](https://jigsaw.w3.org/css-validator/validator) can be used to validate CSS files.
 
+The page [Flexbox Froggy](https://flexboxfroggy.com/) contains 24 challenges with `flexbox` prop in CSS.
+
 ---
 
 ### Credits

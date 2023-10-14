@@ -1,0 +1,90 @@
+/* FLEXBOX */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* applying  flex display crams the rows into colums */
+
+/* TLDR: flex crams all the blocks to occupy a smaller width and height if other elements are competing for the same space. */
+
+/* 
+The flex property is used to specify how the items inside a flex container should grow or shrink to fit the available space. It is a shorthand property that combines three other properties: flex-grow, flex-shrink, and flex-basis.
+ */
+ /* The 'flex-grow' property specifies how much an item should grow relative to the other items in the container. The default value is 0, which means the item will not grow. */
+ /* The 'flex-shrink' property specifies how much an item should shrink relative to the other items in the container. The default value is 1, which means the item will shrink if necessary. */
+
+/* The 'flex-basis' property specifies the initial size of the item before any remaining space is distributed. The default value is auto, which means the item will be sized based on its content. */
+
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+
+  /* This code aligns the content of the container (i.e. the box)  */
+  display: flex;
+  gap: 1rem;
+  /* adds gap between flex items */
+  
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  /* align the items inside a flex container along the main axis. */
+  /* align-items: center; */
+  align-items: center;
+  /* aligns flex items */
+  flex-direction: row;
+  /* flex-direction: column-reverse; */
+  flex-wrap: nowrap;
+  /* prevents content from overflowing when window is shrunk */
+  /* flex-flow: row wrap; */
+  /* flexes direction and adds wrap */
+  /* align-content: flex-end; */
+  align-content: space-evenly;
+  /*  */
+} 
+
+/* Difference between justify-content and align-content: */
+/* 'justify-content' aligns items along the main axis of the container, which is typically horizontal. */
+/* 'align-content', on the other hand, aligns items along the cross axis of the container, which is typically vertical.  */
+
+.box {
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  /* This code aligns the content of the box (i.e. the numbers) to the center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* This code flexes the dimensions of the box element */
+   flex-basis: 100px;
+   /* increases the width */
+   /* flex-grow: 1; */
+   flex-shrink: 1;
+}
+
+.box:nth-child(2) {
+  background-color: #f00;
+  /* flex-grow: 2; */
+  /* box 2 takes two times the space as box 1 */
+  flex-shrink:2;
+  /* if not wrapping, shrinks the box 2 twice as box 1 */
+  order: -1
+  /* changes the order of box 2 by bringing it to the beginning of the row */
+}
